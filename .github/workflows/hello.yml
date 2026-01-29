@@ -1,0 +1,17 @@
+name: Hello world
+on: 
+  push:
+    branches:("main")
+  jobs:
+    hello1:
+      runs-on: ubunti-latest
+      step:
+        - name: say hello
+          run:echo "hello"
+        - name: say name
+          run:echo "papran"
+      bye:
+      runs-on: ubunti-latest
+        steps:
+          - name: say bye
+            run:echo "bye"
